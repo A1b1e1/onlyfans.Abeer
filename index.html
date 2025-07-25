@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Onlyfans Abeer 😏</title>
+  <title>OnlyFans</title>
+  <link rel="icon" href="https://onlyfans.com/favicon.ico">
   <style>
     body {
-      background-color: black;
-      color: white;
-      font-family: sans-serif;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #222;
       text-align: center;
-      padding-top: 100px;
+    }
+    header {
+      background-color: #00aff0;
+      padding: 20px;
+    }
+    header img {
+      height: 40px;
+    }
+    .container {
+      padding: 100px 20px;
+    }
+    .container h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .btn {
+      background-color: #00aff0;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
     #scare {
       display: none;
@@ -19,29 +43,38 @@
       width: 100%;
       height: 100%;
       background-color: black;
-      z-index: 999;
+      z-index: 9999;
     }
     #scare img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
+    audio {
+      display: none;
+    }
   </style>
 </head>
 <body>
-  <h1>تحميل محتوى خاص بـ Abeer... 🫣</h1>
-  <p>يرجى الانتظار قليلاً</p>
+  <header>
+    <img src="https://seeklogo.com/images/O/onlyfans-logo-8B036F5E05-seeklogo.com.png" alt="OnlyFans Logo">
+  </header>
+
+  <div class="container">
+    <h1>Sign in to your account</h1>
+    <button class="btn" onclick="startPrank()">Login</button>
+  </div>
 
   <div id="scare">
     <img src="https://i.imgur.com/ZRUY2Wa.gif" alt="😱 BOO!">
-    <audio id="scream" src="https://www.soundjay.com/human/screaming-woman-01.mp3" autoplay></audio>
+    <audio id="scream" src="https://www.soundjay.com/human/screaming-woman-01.mp3"></audio>
   </div>
 
   <script>
-    setTimeout(() => {
+    function startPrank() {
       document.getElementById("scare").style.display = "block";
       document.getElementById("scream").play();
-    }, 4000); // يبدأ المقلب بعد 4 ثواني
+    }
   </script>
 </body>
-</html> 
+</html>
